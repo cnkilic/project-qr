@@ -1,0 +1,71 @@
+.drawerPage-container {
+  padding-top: 20px;
+}
+.pageTitle {
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.orderSummary-wrapper {
+  box-shadow: 0 3px 8px rgba(96, 96, 96, 0.6);
+  border-radius: 6px;
+  padding: 15px 30px 15px 30px;
+}
+
+.totalAmount-wrapper {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid rgb(211, 209, 209);
+}
+
+.totalAmount-text {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.totalAmount-price {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #fafafa;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #6f94f0;
+  border: 1px solid #6f94f0;
+}
+
+.backButton {
+  background-color: transparent;
+  border: 1px solid #5470f3;
+  color: #5470f3;
+}
+
+.backButton:hover {
+  background-color: #5470f3;
+  border: 1px solid #5470f3;
+  color: #fafafa;
+}
+.continueButton {
+  background-color: #5b71e1;
+  border: 1px solid #5b71e1;
+}
+
+.footerButtons > a {
+  margin-left: auto;
+}

@@ -1,0 +1,53 @@
+.drawerItem-container {
+  box-shadow: 0 3px 8px rgba(96, 96, 96, 0.6);
+  border-radius: 6px;
+  padding: 10px 20px 10px 10px;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.drawerItem-container:hover {
+  background-color: rgb(234, 252, 246);
+}
+
+.image-wrapper {
+}
+
+.fruitBoxImg {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-wrapper {
+}
+
+.text-title {
+  font-weight: bold;
+  font-size: large;
+}
+
+.text-description {
+}
+
+.price {
+  text-align: end;
+  font-weight: bold;
+  font-size: large;
+}
+
+
+@media (max-width: 768px) {
+    .fruitBoxImg {
+      max-width: 100px ;
+      max-height: 100px;
+    }
+  }

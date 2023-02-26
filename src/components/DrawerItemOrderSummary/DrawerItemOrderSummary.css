@@ -1,0 +1,38 @@
+.draweritem-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid rgb(211, 209, 209);
+}
+
+
+
+.fruitImg {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.content-title{
+  font-weight: 600;
+}
+
+.content-quantitity{
+  width: fit-content;
+  border: 1px solid #213547;
+  border-radius: 8px;
+  padding: 1px 10px;
+}
+
+.price-wrapper {
+  text-align: end;
+  font-weight: bold;
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+  .fruitImg {
+    max-width: 75px;
+    max-height: 750px;
+  }
+}
