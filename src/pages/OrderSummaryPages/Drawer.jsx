@@ -11,7 +11,7 @@ function Drawer() {
   const drawerItem = {
     name: "Fruit Box",
     totalPrice: "$14",
-    link: "00:00:00:00/1",
+    link: "00:00:00:00:00:00/1",
     img: "assets/images/fruitBox.png",
     content: [
       {
@@ -43,7 +43,6 @@ function Drawer() {
 
   let paymentLink = `/${drawerItem.link}/payment`;
 
-  console.log("paymentLink:", paymentLink);
 
   function totalPriceFounder(drawerItemsArray) {
     let totalPrice = 0;

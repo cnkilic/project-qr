@@ -12,7 +12,6 @@ function Payment() {
   const homepath = `/${deviceId}`;
   const navigate = useNavigate();
 
-  console.log("params:", params);
 
   const formFinishhandler = (e) => {
     e.preventDefault();
@@ -26,15 +25,10 @@ function Payment() {
   };
 
   const sendPaymentStatus = (deviceId, drawerId) => {
-    let data = { deviceId: 'deneme', drawerId: 'drawerId' };
-
-    console.log("data:", data)
-    console.log("JSON.stringify(data):", JSON.stringify(data));
-
+    let data = { deviceId: deviceId, drawerId: drawerId };
 
     fetch("http://35.159.22.21/", {
       method: "POST",
-      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },

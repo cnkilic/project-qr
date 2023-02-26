@@ -25,7 +25,7 @@ function App() {
             element={<Payment />}
           />
 
-          <Route path="/" exact element={<Navigate to="/00:00:00:00" replace />} />
+          <Route path="/" exact element={<Navigate to="/00:00:00:00:00:00" replace />} />
 
           <Route path="*" element={<PageNotFound />} />
         </Routes>
