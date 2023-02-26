@@ -26,20 +26,19 @@ function Payment() {
   };
 
   const sendPaymentStatus = (deviceId, drawerId) => {
-    const data = { deviceId: deviceId, drawerId: drawerId };
+    let data = { deviceId: 'deneme', drawerId: 'drawerId' };
 
-    console.log("data:", data);
-    fetch("http://54.213.172.57:3000/", {
+    console.log("data:", data)
+    console.log("JSON.stringify(data):", JSON.stringify(data));
+
+
+    fetch("http://35.159.22.21/", {
       method: "POST",
       mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name: "John",
-        age: 30,
-        email: "john@example.com",
-      }),
+      body: JSON.stringify(data),
     })
       .then((response) => response.json())
       .then((data) => {
