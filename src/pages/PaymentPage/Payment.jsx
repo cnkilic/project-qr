@@ -9,9 +9,8 @@ function Payment() {
   const { deviceId, drawerId } = params;
 
   const backPath = `/${deviceId}/${drawerId}`;
-  const homepath = `/${deviceId}`;
+  const homepath = `/${deviceId}/${drawerId}`;
   const navigate = useNavigate();
-
 
   const formFinishhandler = (e) => {
     e.preventDefault();
@@ -53,7 +52,7 @@ function Payment() {
             alt=""
           />
         </a>
-        <div className="pageTitle">Confirm Payment</div>
+        <div className="pageTitle ">Payment Methods</div>
         <div className="payment-wrapper">
           <div className="paymentOptions">
             <div
@@ -200,8 +199,27 @@ function Payment() {
           <div className="backdrop"></div>
           <div className="popup">
             <div className="popup-content">
-              <h2>Payment Successful ! </h2>
-              <h2></h2>
+              <div className="popup-content-part1">
+                <div>
+                  <img
+                    className="checkIcon"
+                    src="/assets/images/checkIcon.png"
+                    alt=""
+                  />{" "}
+                </div>
+                <h2 className="successText">Payment Successful ! </h2>
+              </div>
+
+              <div className="popup-content-part2">
+                <div className="success-text">
+                  <div>Amount Paid : </div>
+                  <div> $11.00</div>
+                </div>
+                <div className="success-text">
+                  <div>Bank :</div>
+                  <div> VISA</div>
+                </div>
+              </div>
               <button
                 onClick={() => {
                   setPaymentStatus("");
