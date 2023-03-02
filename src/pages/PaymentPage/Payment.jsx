@@ -105,7 +105,7 @@ function Payment() {
                   type="text"
                   placeholder="John Smith"
                   required
-                  value="John Smith"
+                  defaultValue="John Smith"
                 />
               </div>
 
@@ -118,7 +118,7 @@ function Payment() {
                   type="text"
                   placeholder="**** **** **** ****"
                   required
-                  value="1234 1234 1234 1234"
+                  defaultValue="1234 1234 1234 1234"
                 />
               </div>
 
@@ -132,7 +132,7 @@ function Payment() {
                     type="text"
                     placeholder="MM / YY*"
                     required
-                    value="07 / 25 "
+                    defaultValue="07 / 25 "
                   />
                 </div>
                 <div className="inputItem">
@@ -144,7 +144,7 @@ function Payment() {
                     type="password"
                     placeholder="***"
                     required
-                    value="025"
+                    defaultValue="025"
                   />
                 </div>
               </div>
@@ -167,7 +167,7 @@ function Payment() {
                   type="text"
                   placeholder="johnSmith@gmail.com"
                   required
-                  value="johnSmith@gmail.com"
+                  defaultValue="johnSmith@gmail.com"
                 />
               </div>
 
@@ -180,7 +180,7 @@ function Payment() {
                   type="password"
                   placeholder="********"
                   required
-                  value="12341234"
+                  defaultValue="12341234"
                 />
               </div>
 
