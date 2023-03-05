@@ -182,7 +182,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
-
 }
 
 .popup-content-part1 {
@@ -191,6 +190,9 @@ button {
   border-bottom: 1px dashed rgb(139, 137, 137);
 }
 
+.popup-content-part2 {
+  color: black;
+}
 .success-text {
   display: flex;
   flex-direction: row;

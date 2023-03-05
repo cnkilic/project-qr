@@ -222,7 +222,7 @@ function Payment() {
                   <div> $11.00</div>
                 </div>
                 <div className="success-text">
-                  <div>Bank :</div>
+                  <div>Method :</div>
                   <div> VISA</div>
                 </div>
               </div>
