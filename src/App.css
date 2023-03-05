@@ -13,7 +13,7 @@
 }
 
 input {
-  -webkit-user-select: text;
+  color: black;
 }
 
 @media (max-width: 640px) {
