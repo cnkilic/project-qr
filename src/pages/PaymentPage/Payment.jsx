@@ -26,7 +26,7 @@ function Payment() {
   const sendPaymentStatus = (deviceId, drawerId) => {
     let data = { deviceId: deviceId, drawerId: drawerId };
 
-    fetch("http://35.159.22.21/", {
+    fetch("http://vendugo.com/purchase", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
