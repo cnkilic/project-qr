@@ -12,8 +12,9 @@
   background-color: white;
 }
 
-
-
+input {
+  -webkit-user-select: text;
+}
 
 @media (max-width: 640px) {
 }
