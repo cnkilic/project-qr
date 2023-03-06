@@ -26,7 +26,7 @@ function Payment() {
   const sendPaymentStatus = (deviceId, drawerId) => {
     let data = { deviceId: deviceId, drawerId: drawerId };
 
-    fetch("http://vendugo.com/purchase", {
+    fetch("https://backend-lb-1837638064.eu-central-1.elb.amazonaws.com/purchase", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
