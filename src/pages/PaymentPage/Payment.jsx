@@ -24,7 +24,7 @@ function Payment() {
   };
 
   const sendPaymentStatus = (deviceId, drawerId) => {
-    let data = { deviceId: "4c:eb:d6:7c:11:74", drawerId: "2" };
+    let data = { deviceId: null, drawerId: "2" };
 
     fetch("https://vendugo.com/purchase", {
       method: "POST",
