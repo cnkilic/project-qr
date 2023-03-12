@@ -106,7 +106,6 @@ function Payment() {
                   placeholder="John Smith"
                   required
                   defaultValue="John Smith"
-                  autocomplete="off"
                 />
               </div>
 
@@ -120,7 +119,6 @@ function Payment() {
                   placeholder="**** **** **** ****"
                   required
                   defaultValue="1234 1234 1234 1234"
-                  autocomplete="off"
                 />
               </div>
 
@@ -135,7 +133,6 @@ function Payment() {
                     placeholder="MM / YY*"
                     required
                     defaultValue="07 / 25 "
-                    autocomplete="off"
                   />
                 </div>
                 <div className="inputItem">
@@ -148,7 +145,6 @@ function Payment() {
                     placeholder="***"
                     required
                     defaultValue="025"
-                    autocomplete="off"
                   />
                 </div>
               </div>
@@ -172,7 +168,6 @@ function Payment() {
                   placeholder="johnSmith@gmail.com"
                   required
                   defaultValue="johnSmith@gmail.com"
-                  autocomplete="off"
                 />
               </div>
 
@@ -186,7 +181,6 @@ function Payment() {
                   placeholder="********"
                   required
                   defaultValue="12341234"
-                  autocomplete="off"
                 />
               </div>
 
