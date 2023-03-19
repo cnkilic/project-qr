@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./Drawer.css";
 
@@ -8,6 +8,31 @@ function Drawer() {
 
   let paymentLink = `/${deviceId}/${drawerId}/payment`;
 
+  useEffect(() => {
+    if (drawerId && drawerId) {
+      sendPurchaseAttempt(deviceId, drawerId);
+    }
+  }, []);
+
+  const sendPurchaseAttempt = (deviceId, drawerId) => {
+    let data = { deviceId: deviceId, drawerId: drawerId };
+
+    fetch("https://vendugo.com/attempt", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+
   return (
     <>
       <div className="drawerPage-container">
@@ -15,7 +40,7 @@ function Drawer() {
           <div className="pageTitle">Confirm Payment</div>
 
           <div className="payment-row drawerBox-wrapper">
-            <div>Drawer 1</div>
+            <div>Drawer {drawerId}</div>
             <div>$9.00</div>
           </div>
           <div className="payment-row ">
