@@ -1,12 +1,11 @@
 .paymentPage-container {
-  padding-top: 20px;
   padding-bottom: 40px;
   height: 100vh;
 }
 .backIcon {
   max-width: 20px;
   max-height: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .pageTitle {
